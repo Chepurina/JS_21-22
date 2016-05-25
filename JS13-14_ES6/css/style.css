@@ -1,0 +1,101 @@
+	/*TEST*/
+body{
+	padding-top: 15px;
+}
+.test__wrapper{
+	margin: 0 auto;
+	padding: 15px;
+	padding-left: 30px;
+	width: 650px;
+	height: 600px;
+	background-color: #b4d3f4;
+	box-shadow: 0 2px 7px #00205c;
+	font: 14px 'Arial';
+	line-height: 30px;
+}
+.test__title{
+	margin: 10px;
+	font-size: 20px;
+	color: #00205c;
+	font-weight: 600;
+	text-align: center;	
+}
+.test__sentence{
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.test__question{
+	margin: 10px;
+	font-size: 15px;
+}
+.test__answer{
+	margin-left: 15px;
+	line-height: 25px;
+	font-size: 14px;
+}
+.test__answer:last-child{
+	margin-bottom: 20px;
+}
+
+.test__button{
+	width: 160px;
+	height: 30px;
+	position: relative; 
+	border: 2px #00205c solid;
+	top: 50px;
+	left: 40%;
+	border-radius: 5px 5px;
+}
+.test__button:hover {
+	background: #3b8ede;
+	font-weight: 600;
+}
+
+	/*MODAL FORM*/
+#modalForm{
+	width: 400px; 
+	height:150px;
+	border: 2px #00205c solid;
+	background: #fff;
+	position: fixed; 
+	top: 50%; 
+	left: 34%;
+	display: none;
+	opacity: 0; 
+	z-index: 5; 
+	padding: 10px 10px;
+	text-align: center;
+}
+#modalForm #modalForm__close{
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+#modalForm__overlay{
+	z-index: 3;
+	position: fixed; 
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity:0.7; 
+	width:100%; 
+	height:100%; 
+	top:0; 
+	left:0;
+	cursor:pointer;
+	display:none;
+}
+.correct{
+	color: blue;
+}
+.incorrect{
+	color: red;
+}
+.Good{
+	color: #00205c;
+	font-size: 18px;
+	font-weight: 600;
+}
